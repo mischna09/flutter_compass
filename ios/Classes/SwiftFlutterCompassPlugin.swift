@@ -39,6 +39,6 @@ public class SwiftFlutterCompassPlugin: NSObject, FlutterPlugin, FlutterStreamHa
     }
 
     public func locationManager(_: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
-        eventSink?([newHeading.trueHeading])
+        eventSink?([newHeading.trueHeading,0.0,0.0])
     }
 }
